@@ -47,7 +47,7 @@ class LoginScreen extends StatelessWidget {
                   print("Contraseña o User vacíos");
                 }
 
-                if ((inputUser == "Mia") && (inputPass == "Anuel2006") ){
+                if ((inputUser == "Juan") && (inputPass == "SantiDPA") ){
                   print("Inicio de sesión exitoso");
                   
                   context.pushNamed(HomeScreen.name , extra: inputUser);
