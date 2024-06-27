@@ -12,8 +12,8 @@ String userName;
   @override
   Widget build(BuildContext context) {
 
-   List<String> empleados = ['Mia' , 'Juan' , 'Ana' , 'Natu' , 'Pitoco', 'Facundo', 'Ramiro', 'Pepe' , 'Santino', 'Andrés']; 
-   List<String> departamentos = ['Logística' , 'Ventas' , 'Marketing' , 'Servicio técnico' , 'Producción', 'Recursos Humanos' , 'Tesorería', 'Administración', 'Datos','Seguridad']; 
+   List<String> jugadores = ['Lionel Messi' , 'Rodrigo De Paul' , 'Gonzalo Montiel' , 'Cristian Romero' , 'Emiliano Martinez', 'Lisandro Martinez', 'Marcos Acuña', 'Enzo Fernandez' , 'Leandro Paredes', 'Lautaro Martinez']; 
+   List<String> equipos = ['Inter Miami' , 'Atlético de Madrid' , 'Nottinham Forest' , 'Tottenham' , 'Aston Villa', 'Manchester United' , 'Sevilla', 'Chelsea', 'AC Roma','Inter de Milán']; 
 
 
     return  Scaffold(
@@ -22,12 +22,12 @@ String userName;
       body:  Center(
         child: 
         ListView.builder(
-          itemCount: empleados.length,
+          itemCount: jugadores.length,
           itemBuilder:(context, index) {
             return Card(
               child:ListTile(
-                title:Text(empleados[index]),
-                subtitle: Text(departamentos[index]), 
+                title:Text(jugadores[index]),
+                subtitle: Text(equipos[index]), 
             ),
           );
     
